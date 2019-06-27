@@ -89,6 +89,3 @@ sw.*
 
 # env file
 .env
-
-# firebase env file
-firebase.js
