@@ -4,8 +4,9 @@ Firebase hosting site is here [growing-trees-ex](https://grow-trees-ex.firebasea
 
 ## Build Setup
 ``` bash
-# First, build to Docker
+# First, build to Docker and npm install
 $ docker-compose build
+$ docker-compose run nuxt npm install
 
 # Second, enter to Docker container
 $ docker-compose run nuxt sh
