@@ -1,22 +1,21 @@
 # growing-trees-ex
-
+Firebase hosting site is here [growing-trees-ex](https://grow-trees-ex.firebaseapp.com/).
 > Nuxt.js and Firebase Studing.
 
 ## Build Setup
-
 ``` bash
-# install dependencies
-$ npm run install
+# First, build to Docker
+$ docker-compose build
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# Second, enter to Docker container
+$ docker-compose run nuxt sh
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+# Third, login to Firebase and nuxt generate
+(docker)$ firebase login --no-localhost
+(docker)$ npm run generat
 
-# generate static project
-$ npm run generate
+# Then, deploy on Firebase
+(docker)$ firebase init
+(docker)$ firebase deploy
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+Done! :fire::whale:
